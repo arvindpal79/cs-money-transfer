@@ -64,3 +64,4 @@ Extract zip file or checkout github repo and inside root folder execute below co
 |   |   |   ├──  transaction.json // Temporary mock data \
 |   ├── theme \
 |   |   ├── *.scss // Extend Bootstrap variables and classes with custom css classes \
+
