@@ -1,0 +1,13 @@
+.transaction {
+  img {
+    // 16px ie equal to 1rem
+    width: 3.375rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    &:hover {
+      -webkit-filter: none;
+      filter: none;
+    }
+  }
+}

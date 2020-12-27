@@ -1,0 +1,118 @@
+<div class="shadow-sm p-0 bg-white rounded">
+  <!-- Heading -->
+  <cs-panel-heading
+    [textLabel]="'transaction.title'"
+    [className]="'transaction-header'"
+  ></cs-panel-heading>
+  <div class="row px-4">
+    <div class="col-sm-12 col-md-6 mt-4 mb-sm-2 mb-md-4">
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control rounded-0 border-top-0 border-left-0 border-right-0"
+          placeholder="{{ 'transaction.searchText' | translate }}"
+          [(ngModel)]="searchText"
+        />
+        <button
+          type="button"
+          class="close"
+          [ngClass]="{ 'd-none': searchText === '' }"
+          (click)="searchText = ''"
+        >
+          <span>&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 mb-4 mt-sm-2 mt-md-4 text-right">
+      <div class="d-flex align-self-center justify-content-sm-center justify-content-md-end flex-wrap">
+        <label
+          class="font-weight-bold my-2 mr-3 text-nowrap"
+          [translate]="'transaction.sortbyLabel'"
+          >Sort by</label
+        >
+        <div class="btn-group">
+          <div ngbDropdown class="btn-group">
+            <button
+              class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0"
+              [ngClass]="toggleSort.date ? sortOrder : ''"
+              (click)="setSortkey('dates.valueDate')"
+              [translate]="'transaction.dateLabel'"
+            >
+              Date
+            </button>
+          </div>
+          <button
+            type="button"
+            class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0"
+            [ngClass]="toggleSort.merchant ? sortOrder : ''"
+            (click)="setSortkey('merchant.name')"
+            [translate]="'transaction.beneficiaryLabel'"
+          >
+            Beneficiary
+          </button>
+          <button
+            type="button"
+            class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0"
+            [ngClass]="toggleSort.amount ? sortOrder : ''"
+            (click)="setSortkey('transaction.amountCurrency.amount')"
+            [translate]="'transaction.amountLabel'"
+          >
+            Amount
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row px-4">
+    <div class="col-12">
+      <div class="table-responsive">
+        <table class="table border transaction">
+          <tbody>
+            <tr
+              *ngFor="
+                let data of transactions
+                  | dataFilter: searchText
+                  | sort: sortOrder:sortBy
+                ; trackBy:trackByTransDate
+              "
+            >
+              <td
+                class="align-middle text-center"
+                [ngStyle]="{ 'border-left': '10px solid' + data.categoryCode }"
+                [innerText]="data.dates?.valueDate | date: 'MMM dd'"
+              ></td>
+              <td class="align-middle">
+                <img
+                  [src]="
+                    './assets/icons/' +
+                    getUrl(data.merchant?.name | lowercase) +
+                    '.png'
+                  "
+                  class="mr-2"
+                  (error)="onImgError($event.target)"
+                />
+              </td>
+              <td class="align-middle">
+                <h5 [innerText]="data.merchant?.name" class="mb-0"></h5>
+                <span [innerText]="data.transaction?.type"></span>
+              </td>
+              <td
+                class="text-right align-middle font-weight-bold text-truncate"
+                [innerHTML]="
+                  '-' +
+                  (
+                    data.transaction?.amountCurrency?.amount
+                    | currency
+                    : data.transaction?.amountCurrency?.currencyCode
+                    : 'symbol-narrow'
+                    : '1.2-2'
+                  )
+                "
+              ></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{
+  "transfer": {
+    "title": "Make a Transfer",
+    "fromLabel": "From Account",
+    "toLabel": "To Account",
+    "amountLabel": "Amount",
+    "submitBtn": "Submit",
+    "transferBtn": "Transfer"
+  },
+  "transaction": {
+    "title": "Recent Transactions",
+    "sortbyLabel": "Sort by",
+    "dateLabel": "Date",
+    "beneficiaryLabel": "Beneficiary",
+    "amountLabel": "Amount",
+    "searchText": "Search by typing..."
+  }
+}

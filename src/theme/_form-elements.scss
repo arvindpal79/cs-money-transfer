@@ -1,0 +1,37 @@
+.btn--primary {
+  @extend .btn-primary;
+  background: $btn-primary !important;
+  border-color: $btn-primary !important;
+  color: $white !important;
+  box-shadow: none;
+
+  &:hover {
+    color: $white !important;
+  }
+}
+
+input, button {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.close {
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}

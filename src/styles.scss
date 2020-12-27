@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import './theme/_variables.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import './theme/_common.scss';
+@import './theme/_form-elements.scss';
+@import './theme/_background-variant.scss';
+@import './theme/_header.scss';
+@import './theme/_transaction.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
