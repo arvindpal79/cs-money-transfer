@@ -1,0 +1,18 @@
+{
+  "transfer": {
+    "title": "Maak een Overdracht",
+    "fromLabel": "Van account",
+    "toLabel": "Naar account",
+    "amountLabel": "Bedrag",
+    "submitBtn": "Verzenden",
+    "transferBtn": "Overdracht"
+  },
+  "transaction": {
+    "title": "Recente Transacties",
+    "sortbyLabel": "Sorteren op",
+    "dateLabel": "Datum",
+    "beneficiaryLabel": "Begunstigde",
+    "amountLabel": "Bedrag",
+    "searchText": "Zoek door te typen..."
+  }
+}
