@@ -1,42 +1,66 @@
 # Backbase Front End Assignment: Make A Transaction
-
-## Technology
-Angular - 8.0.0
-Bootstrap - 4.5
-
-## Assignment Purpose
-
-The purpose of this test is to show off your level of front-end development skills and to show your knowledge of modern front-end frameworks and practices.
+Simulation of simple money transfer
 
 ## Assumptions
+Below are the assmuption has been made while building the application
 
-For this assignment, you need to develop a single page application according to the provided design with the functionality of transferring money and showing the past transactions in a historical transactions list.
+#### Full screen fluidic layout using Bootstrap CSS framework
+Bootstrap container-fluid css class has been applied.
+#### Added En and NL icons to change language
+Not part of the design mockup. Has been added just to show multi-lingual feature.
+### Icons in the panel heading having white background color
+The arrow.png and briefcase.png icons having white white background color so most suitable filter effect has been applied.
 
-## Functional Requirements
+### Icons in the panel heading having white background color
+The arrow.png and briefcase.png icons having white white background color so most suitable filter effect has been applied.
 
+### Generic loader has been implemented to show loading spinner for every http API call
+Additionally added some delay just to show loading spinner behaviour.
 
-- Share your solution on the remote repository; i.e. Github, Bitbucket, GitLab...
-- deploy to a static hosting platform of your choice; i.e. Netlify, Firebase, Vercel, Github pages or Heroku
-- decent test coverage
+## how to set up and run the app
+NodeJs and Angluar must be installed to run application in local machine.
 
-
-## Technology Restrictions
-
-### Read Carefully!
-
-- Architect your application any way you want, focus on clean, reusable code. Your code should be DRY, with a focus on front-end best practices.
-- We are open to seeing applications written in any modern framework, but we prefer the latest Angular. Explain why you've chosen a different framework in the README.
-- You can use any CSS framework, but we prefer if you don't.
-- Responsiveness is required in this assignment.
-- Create a "README.md" file explaining:
-    - how to set up and run/test the app
-    - choice of the framework (if not Angular)
-    - application structure
-
-## Helpful Information
-
-- The design to be developed is provided as a PNG for quick reference in the "design" folder.
-- Images and icons have been provided in the assets folder. Transaction images are provided as base64 images in the transaction JSON.
-- The font for the UI Design can be found on Google fonts: https://fonts.google.com/specimen/Kanit
-
-
+Extract zip file or Checkout github repor and inside root folder execute below commaonds
+  ### npm install
+  ### ng serve -o
+## Application Architecure
+├── src
+│   ├── app
+│   │   ├── common
+│   │   │   ├── components
+│   │   │   │   ├── panel-heading.component.ts
+│   │   │   ├── directives
+│   │   │   │   ├── currency-formatter.directive.ts
+│   │   │   │   ├── currency-formatter.directive.ts
+│   │   │   ├── interface
+│   │   │   │   ├── cs-transaction.component.ts
+│   │   │   │   ├── cs-transfer.component.ts
+│   │   │   ├── pipes
+│   │   │   │   ├── clone-deep-formatter.pipe.ts
+│   │   │   │   ├── data-filter.pipe.ts
+│   │   │   │   ├── sort.pipe.ts
+│   │   │   ├── service
+│   │   │   │   ├── interceptor.service.ts
+│   │   │   │   ├── loader.service.ts
+│   │   │   ├── shared-data
+|   │   │   │   ├── shared-data.service.ts
+│   │   ├── cs-header
+│   │   │   ├── cs-header.component.ts
+│   │   ├── cs-loader
+│   │   │   ├── cs-loader.component.ts
+│   │   ├── cs-transaction
+│   │   │   ├── cs-transaction.component.ts
+│   │   ├── cs-transfer
+│   │   │   ├── cs-transfer.component.ts
+│   │   ├── services
+│   │   │   ├── transaction.service.ts
+│   │   │   ├── transfer.service.ts
+|   ├── assets
+|   |   ├── i18n
+|   |   |   ├── en.json
+|   |   |   ├── nl.json
+|   |   ├── icons
+|   |   ├── mock-services
+|   |   |   ├──  transaction.json // Temporary mock data
+|   ├── theme
+|   |   ├── *.scss // Extend Bootstrap variables and classes with custom css classes
