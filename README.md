@@ -43,7 +43,7 @@ Extract zip file or checkout github repo and inside root folder execute below co
 │   │   │   │   ├── interceptor.service.ts \
 │   │   │   │   ├── loader.service.ts \
 │   │   │   ├── shared-data \
-|   │   │   │   ├── shared-data.service.ts \
+│   │   │   │   ├── shared-data.service.ts \
 │   │   ├── cs-header \
 │   │   │   ├── cs-header.component.ts \
 │   │   ├── cs-loader \
