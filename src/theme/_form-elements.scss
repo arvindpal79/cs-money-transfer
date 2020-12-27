@@ -10,6 +10,11 @@
   }
 }
 
+input[type="text"] {
+  &:read-only {
+    background-color: $white !important;
+  }
+}
 input, button {
   &:focus {
     box-shadow: none !important;
