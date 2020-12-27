@@ -1,27 +1,42 @@
-# CsFeAssignment
+# Backbase Front End Assignment: Make A Transaction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+## Technology
+Angular - 8.0.0
+Bootstrap - 4.5
 
-## Development server
+## Assignment Purpose
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The purpose of this test is to show off your level of front-end development skills and to show your knowledge of modern front-end frameworks and practices.
 
-## Code scaffolding
+## Assumptions
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For this assignment, you need to develop a single page application according to the provided design with the functionality of transferring money and showing the past transactions in a historical transactions list.
 
-## Build
+## Functional Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+- Share your solution on the remote repository; i.e. Github, Bitbucket, GitLab...
+- deploy to a static hosting platform of your choice; i.e. Netlify, Firebase, Vercel, Github pages or Heroku
+- decent test coverage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Technology Restrictions
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Read Carefully!
 
-## Further help
+- Architect your application any way you want, focus on clean, reusable code. Your code should be DRY, with a focus on front-end best practices.
+- We are open to seeing applications written in any modern framework, but we prefer the latest Angular. Explain why you've chosen a different framework in the README.
+- You can use any CSS framework, but we prefer if you don't.
+- Responsiveness is required in this assignment.
+- Create a "README.md" file explaining:
+    - how to set up and run/test the app
+    - choice of the framework (if not Angular)
+    - application structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Helpful Information
+
+- The design to be developed is provided as a PNG for quick reference in the "design" folder.
+- Images and icons have been provided in the assets folder. Transaction images are provided as base64 images in the transaction JSON.
+- The font for the UI Design can be found on Google fonts: https://fonts.google.com/specimen/Kanit
+
+
