@@ -25,43 +25,43 @@ Extract zip file or checkout github repo and inside root folder execute below co
   ### ng serve -o
 ## Application Architecure
 ├── src \
-│   ├── app \
-│   │   ├── common \
-│   │   │   ├── components \
-│   │   │   │   ├── panel-heading.component.ts \
-│   │   │   ├── directives \
-│   │   │   │   ├── currency-formatter.directive.ts \
-│   │   │   │   ├── currency-formatter.directive.ts \
-│   │   │   ├── interface \
-│   │   │   │   ├── cs-transaction.component.ts \
-│   │   │   │   ├── cs-transfer.component.ts \
-│   │   │   ├── pipes \
-│   │   │   │   ├── clone-deep-formatter.pipe.ts \
-│   │   │   │   ├── data-filter.pipe.ts \
-│   │   │   │   ├── sort.pipe.ts \
-│   │   │   ├── service \
-│   │   │   │   ├── interceptor.service.ts \
-│   │   │   │   ├── loader.service.ts \
-│   │   │   ├── shared-data \
-│   │   │   │   ├── shared-data.service.ts \
-│   │   ├── cs-header \
-│   │   │   ├── cs-header.component.ts \
-│   │   ├── cs-loader \
-│   │   │   ├── cs-loader.component.ts \
-│   │   ├── cs-transaction \
-│   │   │   ├── cs-transaction.component.ts \
-│   │   ├── cs-transfer \
-│   │   │   ├── cs-transfer.component.ts \
-│   │   ├── services \
-│   │   │   ├── transaction.service.ts \
-│   │   │   ├── transfer.service.ts \
-│   ├── assets \
-│   │   ├── i18n \
-│   │   │   ├── en.json \
-│   │   │   ├── nl.json \
-│   │   ├── icons \
-│   │   ├── mock-services \
-│   │   │   ├──  transaction.json // Temporary mock data \
-│   ├── theme \
-│   │   ├── *.scss // Extend Bootstrap variables and classes with custom css classes \
+│      ├── app \
+│      │      ├── common \
+│      │      │      ├── components \
+│      │      │      │      ├── panel-heading.component.ts \
+│      │      │      ├── directives \
+│      │      │      │      ├── currency-formatter.directive.ts \
+│      │      │      │      ├── currency-formatter.directive.ts \
+│      │      │      ├── interface \
+│      │      │      │      ├── cs-transaction.component.ts \
+│      │      │      │      ├── cs-transfer.component.ts \
+│      │      │      ├── pipes \
+│      │      │      │      ├── clone-deep-formatter.pipe.ts \
+│      │      │      │      ├── data-filter.pipe.ts \
+│      │      │      │      ├── sort.pipe.ts \
+│      │      │      ├── service \
+│      │      │      │      ├── interceptor.service.ts \
+│      │      │      │      ├── loader.service.ts \
+│      │      │      ├── shared-data \
+│      │      │      │      ├── shared-data.service.ts \
+│      │      ├── cs-header \
+│      │      │      ├── cs-header.component.ts \
+│      │      ├── cs-loader \
+│      │      │      ├── cs-loader.component.ts \
+│      │      ├── cs-transaction \
+│      │      │      ├── cs-transaction.component.ts \
+│      │      ├── cs-transfer \
+│      │      │      ├── cs-transfer.component.ts \
+│      │      ├── services \
+│      │      │      ├── transaction.service.ts \
+│      │      │      ├── transfer.service.ts \
+│      ├── assets \
+│      │      ├── i18n \
+│      │      │      ├── en.json \
+│      │      │      ├── nl.json \
+│      │      ├── icons \
+│      │      ├── mock-services \
+│      │      │      ├──  transaction.json // Temporary mock data \
+│      ├── theme \
+│      │      ├── *.scss // Extend Bootstrap variables and classes with custom css classes \
 
