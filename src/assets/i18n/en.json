@@ -5,7 +5,11 @@
     "toLabel": "To Account",
     "amountLabel": "Amount",
     "submitBtn": "Submit",
-    "transferBtn": "Transfer"
+    "transferBtn": "Transfer",
+    "fromReqMsg": "From account is required",
+    "toReqMsg": "To account is required",
+    "amountReqMsg": "Amount is required",
+    "amountInvalidMsg": "Amount is not valid"
   },
   "transaction": {
     "title": "Recent Transactions",

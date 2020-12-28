@@ -5,7 +5,11 @@
     "toLabel": "Naar account",
     "amountLabel": "Bedrag",
     "submitBtn": "Verzenden",
-    "transferBtn": "Overdracht"
+    "transferBtn": "Overdracht",
+    "fromReqMsg": "Van account is vereist",
+    "toReqMsg": "Naar account is vereist",
+    "amountReqMsg": "Bedrag is vereist",
+    "amountInvalidMsg": "Bedrag is niet geldig"
   },
   "transaction": {
     "title": "Recente Transacties",

@@ -22,7 +22,7 @@
           required
         />
         <div *ngIf="fieldName.fromAccount.dirty && fieldName.fromAccount.errors" class="text-danger">
-          <div *ngIf="fieldName.fromAccount.errors.required">From account is required</div>
+          <div *ngIf="fieldName.fromAccount.errors.required">{{'transfer.fromReqMsg' | translate}}</div>
         </div>
       </div>
       <div class="mb-3">
@@ -40,7 +40,7 @@
           required
         />
         <div *ngIf="fieldName.toAccount.dirty && fieldName.toAccount.errors" class="text-danger">
-          <div *ngIf="fieldName.toAccount.errors.required">To account is required</div>
+          <div *ngIf="fieldName.toAccount.errors.required">{{'transfer.toReqMsg' | translate}}</div>
         </div>
       </div>
       <div class="mb-3">
@@ -58,8 +58,9 @@
           currencyFormatter
           required
         />
-        <div *ngIf="fieldName.amount.dirty && fieldName.amount.errors" class="text-danger">
-          <div *ngIf="fieldName.amount.errors.required">To account is required</div>
+        <div *ngIf="fieldName.amount?.dirty && (fieldName.amount?.errors || validateAmount())" class="text-danger">
+          <div *ngIf="fieldName.amount?.errors?.required">{{'transfer.amountReqMsg' | translate}}</div>
+          <div *ngIf="!fieldName.amount?.errors?.required && validateAmount()">{{'transfer.amountInvalidMsg' | translate}}</div>
         </div>
       </div>
       <div class="text-right py-3">
