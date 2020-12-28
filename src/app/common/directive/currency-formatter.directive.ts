@@ -26,11 +26,13 @@ export class CurrencyFormatterDirective implements OnInit {
 
   @HostListener("blur", ["$event.target.value"])
   onBlur(value) {
+    value = value.replace(/[.](?=.*[.])/g, '').replace(/[^0-9\.]/g, '');
     this.element.value = this.currencyPipe.transform(value);
   }
 
   @HostListener("keyup", ["$event.target.value"])
   onKeyup(value) {
-    this.element.value = value.replace(/[^0-9\-.]/g, '');
+    value = value.replace(/[.](?=.*[.])/g, '');
+    this.element.value = value.replace(/[^0-9\.]/g, '');
   }
 }

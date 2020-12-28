@@ -89,7 +89,9 @@ export class CsTransferComponent implements OnInit {
     });
 
     this.transferForm.valueChanges.subscribe(change => {
-      this.amount = this.transferForm.controls['amount'].value;
+      let amountVal = this.transferForm.controls['amount'].value || '';
+      amountVal = Number(amountVal.replace('-', ''));
+      this.amount = amountVal.toFixed(2);
       this.toAccount = this.transferForm.controls['toAccount'].value;
 
       this.validateAmount();
