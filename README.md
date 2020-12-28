@@ -2,12 +2,12 @@
 Simulation of simple money transfer
 
 ## Assumptions
-Below are the assmuption has been made while building the application
+Below are the assumptions has been made while building the application
 
 * #### Full screen fluidic layout using Bootstrap CSS framework
 Bootstrap container-fluid css class has been applied.
 * #### Added En and NL icons to change language
-Not part of the design mockup. Has been added just to show multi-lingual feature.
+Not part of the design mock-up. Has been added just to show multi-lingual feature.
 * #### Icons in the panel heading having white background color
 The arrow.png and briefcase.png icons having white white background color so most suitable filter effect has been applied.
 
@@ -15,7 +15,7 @@ The arrow.png and briefcase.png icons having white white background color so mos
 The arrow.png and briefcase.png icons having white white background color so most suitable filter effect has been applied.
 
 * #### Generic loader has been implemented to show loading spinner for every http API call
-Additionally added some delay just to show loading spinner behaviour.
+Additionally, added some delay just to show loading spinner behaviour.
 
 ## how to set up and run the app
 NodeJs and Angluar must be installed to run application in local machine.
@@ -23,14 +23,13 @@ NodeJs and Angluar must be installed to run application in local machine.
 Extract zip file or checkout github repo and inside root folder execute below commands
   ### npm install
   ### ng serve -o
-## Application Architecure
+## Application Architecture
 ├── src \
 │      ├── app \
 │      │      ├── common \
 │      │      │      ├── components \
 │      │      │      │      ├── panel-heading.component.ts \
 │      │      │      ├── directives \
-│      │      │      │      ├── currency-formatter.directive.ts \
 │      │      │      │      ├── currency-formatter.directive.ts \
 │      │      │      ├── interface \
 │      │      │      │      ├── cs-transaction.component.ts \
