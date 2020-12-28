@@ -32,13 +32,6 @@ html {
   }
 }
 
-.asc {
-  @include caret('down');
-}
-.desc {
-  @include caret('up');
-}
-
 .loading-spinner{
   background-color: rgba(255, 255, 255, .8);
   position: fixed;

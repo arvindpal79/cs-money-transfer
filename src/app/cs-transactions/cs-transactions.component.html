@@ -33,7 +33,7 @@
         <div class="btn-group">
           <div ngbDropdown class="btn-group">
             <button
-              class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0"
+              class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0 caret-btn"
               [ngClass]="toggleSort.date ? sortOrder : ''"
               (click)="setSortkey('dates.valueDate')"
               [translate]="'transaction.dateLabel'"
@@ -43,7 +43,7 @@
           </div>
           <button
             type="button"
-            class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0"
+            class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0 caret-btn"
             [ngClass]="toggleSort.merchant ? sortOrder : ''"
             (click)="setSortkey('merchant.name')"
             [translate]="'transaction.beneficiaryLabel'"
@@ -52,7 +52,7 @@
           </button>
           <button
             type="button"
-            class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0"
+            class="btn text-uppercase btn-outline-secondary text-truncate border-rounded-0 caret-btn"
             [ngClass]="toggleSort.amount ? sortOrder : ''"
             (click)="setSortkey('transaction.amountCurrency.amount')"
             [translate]="'transaction.amountLabel'"
