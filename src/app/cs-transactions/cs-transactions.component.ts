@@ -89,7 +89,10 @@ export class CsTransactionsComponent implements OnInit {
         this.keyName = 'amount';
         break;
     }
-    this.sortOrder = (this.sortOrder === 'asc' && this.toggleSort[this.keyName]) ? 'desc' : 'asc';
+
+    if(this.toggleSort[this.keyName]) {
+      this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+    }
 
     Object.keys(this.toggleSort).map(key => this.toggleSort[key] = false);
 
