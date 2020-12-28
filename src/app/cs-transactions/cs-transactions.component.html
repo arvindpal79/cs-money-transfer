@@ -88,7 +88,7 @@
                     getUrl(data.merchant?.name | lowercase) +
                     '.png'
                   "
-                  class="mr-2"
+                  class="mr-2 img-fluid"
                   (error)="onImgError($event.target)"
                 />
               </td>
@@ -97,7 +97,7 @@
                 <span [innerText]="data.transaction?.type"></span>
               </td>
               <td
-                class="text-right align-middle font-weight-bold text-truncate"
+                class="text-right align-middle font-weight-bold text-nowrap"
                 [innerHTML]="
                   '-' +
                   (
