@@ -28,39 +28,39 @@ Extract zip file or checkout github repo and inside root folder execute below co
 │      ├── app \
 │      │      ├── common \
 │      │      │      ├── components \
-│      │      │      │      ├── panel-heading.component.ts \
+│      │      │      │      ├── panel-heading.component.ts // Common directive for panel heading \
 │      │      │      ├── directives \
-│      │      │      │      ├── currency-formatter.directive.ts \
+│      │      │      │      ├── currency-formatter.directive.ts // Format currency \
 │      │      │      ├── interface \
-│      │      │      │      ├── cs-transaction.component.ts \
-│      │      │      │      ├── cs-transfer.component.ts \
+│      │      │      │      ├── cs-transaction.component.ts // interface for transactions \
+│      │      │      │      ├── cs-transfer.component.ts // interface for transfer \
 │      │      │      ├── pipes \
-│      │      │      │      ├── clone-deep-formatter.pipe.ts \
-│      │      │      │      ├── data-filter.pipe.ts \
-│      │      │      │      ├── sort.pipe.ts \
+│      │      │      │      ├── clone-deep-formatter.pipe.ts // Deep copy of transactions \
+│      │      │      │      ├── data-filter.pipe.ts // Generic filter to show search resutl \
+│      │      │      │      ├── sort.pipe.ts // Sorting \
 │      │      │      ├── service \
-│      │      │      │      ├── interceptor.service.ts \
-│      │      │      │      ├── loader.service.ts \
+│      │      │      │      ├── interceptor.service.ts // Interceptor service for http calls \
+│      │      │      │      ├── loader.service.ts // Loader service to show hide Loading spinner \
 │      │      │      ├── shared-data \
-│      │      │      │      ├── shared-data.service.ts \
+│      │      │      │      ├── shared-data.service.ts // Data communication withou @Input and @Output decorator \
 │      │      ├── cs-header \
-│      │      │      ├── cs-header.component.ts \
+│      │      │      ├── cs-header.component.ts // Applications header \
 │      │      ├── cs-loader \
-│      │      │      ├── cs-loader.component.ts \
+│      │      │      ├── cs-loader.component.ts // Loading spinner \
 │      │      ├── cs-transaction \
-│      │      │      ├── cs-transaction.component.ts \
+│      │      │      ├── cs-transaction.component.ts // Transactions component \
 │      │      ├── cs-transfer \
-│      │      │      ├── cs-transfer.component.ts \
+│      │      │      ├── cs-transfer.component.ts // Transfer component \
 │      │      ├── services \
-│      │      │      ├── transaction.service.ts \
-│      │      │      ├── transfer.service.ts \
+│      │      │      ├── transaction.service.ts // Service to fetch data for transaction component \
+│      │      │      ├── transfer.service.ts // Service to transfer money for transfer component \
 │      ├── assets \
 │      │      ├── i18n \
-│      │      │      ├── en.json \
-│      │      │      ├── nl.json \
-│      │      ├── icons \
+│      │      │      ├── en.json // Translatoin keys for English language \
+│      │      │      ├── nl.json // Translatoin keys for Dutch language \
+│      │      ├── icons // Icon images \
 │      │      ├── mock-services \
-│      │      │      ├──  transaction.json // Temporary mock data \
+│      │      │      ├──  transaction.json // Temporary transactions mock data \
 │      ├── theme \
 │      │      ├── *.scss // Extend Bootstrap variables and classes with custom css classes \
 
